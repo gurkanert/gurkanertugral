@@ -56,8 +56,10 @@ jQuery(document).ready(function($) {
    
          },
          offset: '35%'
-         
-         function removeLocationHash(){
+      
+      });
+   
+   function removeLocationHash(){
          var noHashURL = window.location.href.replace(/#.*$/, '');
          window.history.replaceState('', document.title, noHashURL) 
      }
@@ -70,8 +72,6 @@ jQuery(document).ready(function($) {
      });
      window.addEventListener("load", function(){
          removeLocationHash();
-   
-      });
    
    
    /*----------------------------------------------------*/
